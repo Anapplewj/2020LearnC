@@ -91,7 +91,7 @@ void howmany()
 {
 	drink.num = 0;
 	drink.embottle = 0;
-	for (int i = 1; i <= drink.money; i++){
+	for (int i = 1; i <= drink.money; i+=drink.price){
 		drink.num++;
 		drink.embottle++;
 		if (drink.embottle==drink.empty){
