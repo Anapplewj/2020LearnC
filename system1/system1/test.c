@@ -133,11 +133,12 @@ void isSafe(List* list, Resource* ava)
 			Resource* n = &list->Need[flager];
 			printf("p[%d]\t%d\t%d\t%d\t%d\t|\t%d\t%d\t%d\t%d\n", flager, allo->a, allo->b, allo->c, allo->d, \
 			n->a, n->b, n->c, n->d);
-			printf("存在安全序列！安全序列为：\n");
-			for (int i = 0; i < currentSize; i++){
-			printf("%d->", flag[i]);
 			}
+		printf("存在安全序列！安全序列为：\n");
+		for (int i = 0; i < currentSize; i++){
+			printf("%d->", flag[i]);
 		}
+		printf("\n");
 	}
 }
 List list;
