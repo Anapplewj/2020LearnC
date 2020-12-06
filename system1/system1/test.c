@@ -16,8 +16,7 @@ typedef struct Resource
 //进程列表，相当于一个通讯录
 typedef struct List
 {
-	Resource Work[MAX_PROCESS];       //进程资源结构体数组
-	Resource Allocation[MAX_PROCESS]; 
+	Resource Allocation[MAX_PROCESS]; //进程资源结构体数组
 	Resource Need[MAX_PROCESS];      
 	//size表示已有进程数
 	int size;
